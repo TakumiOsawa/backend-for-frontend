@@ -9,7 +9,8 @@ RUN yum install -y \
        wget tar iproute git
 
 RUN wget https://services.gradle.org/distributions/gradle-7.1-bin.zip
-RUN unzip -d /opt/gradle /tmp/gradle-7.1-bin.zip
+RUN yum install -y unzip
+RUN unzip -d /opt/gradle ./gradle-7.1-bin.zip
 ENV JAVA_HOME /etc/alternatives/jre
 ENV GRADLE_HOME=/opt/gradle/gradle-7.1
 ENV PATH=${GRADLE_HOME}/bin:${PATH}
