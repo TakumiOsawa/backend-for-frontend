@@ -6,12 +6,8 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-
-tasks.compileJava {
-	options.release.set(8)
-}
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
 
 configurations {
 	compileOnly {
