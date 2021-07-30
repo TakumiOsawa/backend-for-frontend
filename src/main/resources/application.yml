@@ -1,2 +1,5 @@
+server:
+  servlet:
+    context-path: /backend-for-frontend
 service:
   dns: http://internal-ma-osawa-private-79736240.ap-northeast-1.elb.amazonaws.com
